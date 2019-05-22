@@ -32,10 +32,7 @@ RectTransform:
   m_Children:
   - {fileID: 224713674029870626}
   - {fileID: 224012125804833850}
-<<<<<<< HEAD
-=======
   - {fileID: 5678463154429067985}
->>>>>>> d118b05000e40e5dce52000915caff4b506f2636
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -257,8 +254,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-<<<<<<< HEAD
-=======
 --- !u!1001 &5729899269635844514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -384,4 +379,3 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5729899269635844514}
   m_PrefabAsset: {fileID: 0}
->>>>>>> d118b05000e40e5dce52000915caff4b506f2636
