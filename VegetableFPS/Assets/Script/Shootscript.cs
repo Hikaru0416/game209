@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shootscript : MonoBehaviour {
     public GameObject bulletPrefab;
@@ -9,6 +10,7 @@ public class Shootscript : MonoBehaviour {
     public float shotSpeed;
     public int shotCount = 30;
     private float shotInterval;
+    public Text ammunition;
 
     void Start()
     {
@@ -17,6 +19,7 @@ public class Shootscript : MonoBehaviour {
         {
             Debug.Log("kakka");
         }
+        ammunition.text = "弾数：" + shotCount;
     }
 
 	// Update is called once per frame
@@ -28,6 +31,7 @@ public class Shootscript : MonoBehaviour {
             if(shotInterval % 5 == 0 && shotCount > 0)
             {
                 shotCount -= 1;
+                ammunition.text = "弾数：" + shotCount;
 
                 GameObject bullet = (GameObject)Instantiate(
                     bulletPrefab,
@@ -44,6 +48,7 @@ public class Shootscript : MonoBehaviour {
         {
             GetComponent<AudioSource>().PlayOneShot(se2);
             shotCount = 30;
+            ammunition.text = "弾数：" + shotCount;
         }
 	}
 }
