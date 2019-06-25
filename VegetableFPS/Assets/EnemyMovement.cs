@@ -5,17 +5,54 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public GameObject target;
+    public Transform target;
+    static Vector3 pos;
     NavMeshAgent agent;
+
+    float agentToPatroldistance;
+    float agentToTargetdistance;
+
+    public void DoPatrol()
+    {
+        var x = Random.Range(-20.0f, 20.0f);
+        var z = Random.Range(-20.0f, 20.0f);
+        pos = new Vector3(x, 0, z);
+        agent.SetDestination(pos);
+    }
+
+    public void DoTracking()
+    {
+        pos = target.position;
+        agent.SetDestination(pos);
+    }
+
+    void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
     
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        DoPatrol();
     }
 
     void Update()
     {
-        agent.destination = target.transform.position;
+        //Agentと目標値の距離
+        agentToPatroldistance = Vector3.Distance(this.agent.transform.position, pos);
+
+        //AgentとPlayerの距離
+        agentToTargetdistance = Vector3.Distance(this.agent.transform.position, target.transform.position);
+
+        if(agentToTargetdistance <= 15f)
+        {
+            DoTracking();
+            Debug.Log("tuiseki");
+        }else if(agentToPatroldistance < 5f)
+        {
+            DoPatrol();
+            Debug.Log("randam");
+        }
+
     }
-   
 }
