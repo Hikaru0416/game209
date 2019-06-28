@@ -47,11 +47,9 @@ public class EnemyMovement : MonoBehaviour
         if(agentToTargetdistance <= 15f)
         {
             DoTracking();
-            Debug.Log("tuiseki");
         }else if(agentToPatroldistance < 5f)
         {
             DoPatrol();
-            Debug.Log("randam");
         }
 
     }
