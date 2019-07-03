@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Goal : MonoBehaviour
+public class Resalt : MonoBehaviour
 {
+
     // Use this for initialization
     void Start()
     {
@@ -20,7 +21,7 @@ public class Goal : MonoBehaviour
     {
         if (collision.gameObject.name == "Goal")
         {
-            Application.LoadLevel("Title");
+            Application.LoadLevel("Resalt");
         }
     }
 }
