@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7152475730777140001}
   - component: {fileID: 7152475730777140002}
   - component: {fileID: 7152475730777140003}
-  - component: {fileID: 7152475730777139420}
   m_Layer: 0
   m_Name: Left_Arm
   m_TagString: Untagged
@@ -93,20 +92,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &7152475730777139420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152475730777139422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01394046d6210ed4499295fec1c70138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
-  enemy: {fileID: 7152475731816343365}
 --- !u!1 &7152475731013136718
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +104,6 @@ GameObject:
   - component: {fileID: 7152475731013136721}
   - component: {fileID: 7152475731013136722}
   - component: {fileID: 7152475731013136723}
-  - component: {fileID: 7152475731013136716}
   m_Layer: 0
   m_Name: Right_Arm
   m_TagString: Untagged
@@ -200,20 +184,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &7152475731013136716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152475731013136718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01394046d6210ed4499295fec1c70138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
-  enemy: {fileID: 7152475731816343365}
 --- !u!1 &7152475731048656386
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +196,6 @@ GameObject:
   - component: {fileID: 7152475731048656389}
   - component: {fileID: 7152475731048656390}
   - component: {fileID: 7152475731048656391}
-  - component: {fileID: 7152475731048656384}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -306,20 +275,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7152475731048656384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152475731048656386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01394046d6210ed4499295fec1c70138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 25
-  enemy: {fileID: 7152475731816343365}
 --- !u!1 &7152475731726407852
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +287,6 @@ GameObject:
   - component: {fileID: 7152475731726407863}
   - component: {fileID: 7152475731726407856}
   - component: {fileID: 7152475731726407857}
-  - component: {fileID: 7152475731726407858}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -412,20 +366,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7152475731726407858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152475731726407852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01394046d6210ed4499295fec1c70138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 100
-  enemy: {fileID: 7152475731816343365}
 --- !u!1 &7152475731816343365
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +377,6 @@ GameObject:
   - component: {fileID: 7152475731816343369}
   - component: {fileID: 7152475731816343370}
   - component: {fileID: 7152475731816343371}
-  - component: {fileID: 3830959213989830685}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -494,20 +433,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3830959213989830685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152475731816343365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01394046d6210ed4499295fec1c70138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 25
-  enemy: {fileID: 7152475731816343365}
 --- !u!1 &7152475732215760289
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +445,6 @@ GameObject:
   - component: {fileID: 7152475732215760292}
   - component: {fileID: 7152475732215760293}
   - component: {fileID: 7152475732215760294}
-  - component: {fileID: 7152475732215760295}
   m_Layer: 0
   m_Name: Right_Leg
   m_TagString: Untagged
@@ -601,20 +525,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &7152475732215760295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152475732215760289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01394046d6210ed4499295fec1c70138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
-  enemy: {fileID: 7152475731816343365}
 --- !u!1 &7152475732411170450
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +537,6 @@ GameObject:
   - component: {fileID: 7152475732411170453}
   - component: {fileID: 7152475732411170454}
   - component: {fileID: 7152475732411170455}
-  - component: {fileID: 7152475732411170448}
   m_Layer: 0
   m_Name: Left_Leg
   m_TagString: Untagged
@@ -708,17 +617,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &7152475732411170448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152475732411170450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01394046d6210ed4499295fec1c70138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
-  enemy: {fileID: 7152475731816343365}
