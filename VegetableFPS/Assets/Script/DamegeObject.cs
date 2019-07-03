@@ -17,7 +17,7 @@ public class DamegeObject : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other) {
         Debug.Log("あたた");
-        if (other.CompareTag("Weapon"))
+        if (other.CompareTag("Dummie"))
         {
             hp.Damage(damage);
 
