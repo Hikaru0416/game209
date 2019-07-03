@@ -5,17 +5,19 @@ using UnityEngine;
 public class DamegeObject : MonoBehaviour {
 
     public int damage;
-    public GameObject enemy;
+    private GameObject enemy;
     private HP hp;
 
 	void Start ()
     {
+        enemy = GameObject.Find("Zombie");
         hp = enemy.GetComponent<HP>();
+        Debug.Log("Start");
     }
 	
 	void OnTriggerEnter(Collider other) {
-
-        if (other.CompareTag("Shell"))
+        Debug.Log("あたた");
+        if (other.CompareTag("Dummie"))
         {
             hp.Damage(damage);
 

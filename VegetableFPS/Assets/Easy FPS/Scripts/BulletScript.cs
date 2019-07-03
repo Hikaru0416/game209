@@ -32,7 +32,7 @@ public class BulletScript : MonoBehaviour {
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
 				}
-			}		
+            }		
 			Destroy(gameObject);
 		}
 		Destroy(gameObject, 0.1f);
