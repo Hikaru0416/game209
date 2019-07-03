@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Resalt.unity
     guid: 34c34f343cabb9c429e2e609d15cf982
+  - enabled: 1
+    path: Assets/Scenes/field3.unity
+    guid: dd227569724e07a41964806b5b0a05ee
   m_configObjects: {}
