@@ -5,15 +5,17 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     private int ClickCount;
+    private ParticleSystem particle;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         ClickCount = 0;
-
+        particle = this.GetComponent<ParticleSystem>();
     }
 
-    void OnTriggerEnter(Collider Bullet)
+
+    void OnMouseDown()
     {
         ClickCount++;
     }
@@ -23,6 +25,7 @@ public class Target : MonoBehaviour
     {   
         if (ClickCount >= 3)
         {
+            particle.Play();
             this.gameObject.transform.Translate(0, 0.2f, 0);
         }
     }
