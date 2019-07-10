@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BulletScript : MonoBehaviour {
 
+    private HP hp;
+    private GameObject enemy;
 	[Tooltip("Furthest distance bullet will look for target")]
 	public float maxDistance = 1000000;
 	RaycastHit hit;
@@ -14,6 +16,13 @@ public class BulletScript : MonoBehaviour {
 	public GameObject bloodEffect;
 	[Tooltip("Put Weapon layer and Player layer to ignore bullet raycast.")]
 	public LayerMask ignoreLayer;
+
+    void Start()
+    {
+        enemy = GameObject.Find("Zombie");
+        Debug.Log(enemy);
+        hp = enemy.GetComponent<HP>();
+    }
 
 
     /*
@@ -31,6 +40,10 @@ public class BulletScript : MonoBehaviour {
                 }
                 if (hit.transform.tag == "Dummie") {
                     Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                    //  GameObject.Find("Zonbie");
+                    Debug.Log(hit.collider.gameObject);
+                    hit.collider.gameObject.GetComponent<HP>().Damage(20);
+                   // hp.Damage(damage);
                     Destroy(gameObject);
                 }
             }
