@@ -10,7 +10,7 @@ public class MouseLookScript : MonoBehaviour {
 	 * Hiding the cursor.
 	 */
 	void Awake(){
-		Cursor.lockState = CursorLockMode.Locked;
+		
 		myCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
 	}
 

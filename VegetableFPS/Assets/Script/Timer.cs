@@ -5,11 +5,11 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
 
-    public static float countTime = 300;
+    public static float countTime;
   //public float Timetokuten;
         void Start()
     {
-        
+        countTime = 300;
     }
 
     // Update is called once per frame
@@ -30,6 +30,7 @@ public class Timer : MonoBehaviour
             */
 
     }
+    
     public static float GetCountTime()
     {
         return countTime;
