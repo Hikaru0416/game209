@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TimeTokuten : MonoBehaviour
+public class Killtokuten : MonoBehaviour
 {
-    float tokuten;
-    
+    float killtokuten;
     // Start is called before the first frame update
     void Start()
     {
-        tokuten = Timer.GetCountTime();
-        print(tokuten);
-}
-  
+        killtokuten = HP.GetKill();
+        print(killtokuten);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Text>().text = tokuten.ToString("F2");
+        GetComponent<Text>().text = killtokuten.ToString("F2");
     }
-      
 }

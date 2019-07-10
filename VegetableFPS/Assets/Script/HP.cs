@@ -5,16 +5,25 @@ using UnityEngine;
 public class HP : MonoBehaviour {
 
     public int hitPoint = 100; //HP
-
-	void Update () {
+    public static float kill;
+    private void Start()
+    {
+        kill = 0;
+    }
+    void Update () {
 		if (hitPoint <= 0)
         {
             Destroy(gameObject);
+            kill++;
         }
 
 	}
     public void Damage(int damage)
     {
         hitPoint -= damage;
+    }
+    public static float GetKill()
+    {
+        return kill;
     }
 }
