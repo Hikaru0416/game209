@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
+    private int ClickCount = 0;
     public Transform target;
     static Vector3 pos;
     NavMeshAgent agent;
@@ -29,6 +30,7 @@ public class EnemyMovement : MonoBehaviour
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        
     }
     
     void Start()
