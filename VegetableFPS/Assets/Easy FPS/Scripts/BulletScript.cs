@@ -27,12 +27,12 @@ public class BulletScript : MonoBehaviour {
             if (decalHitWall) {
                 if (hit.transform.tag == "LevelPart") {
                     Instantiate(decalHitWall, hit.point + hit.normal * floatInfrontOfWall, Quaternion.LookRotation(hit.normal));
+                    hit.collider.gameObject.GetComponent<Target>().TargetDamage(10);
                     Destroy(gameObject);
                 }
                 if (hit.transform.tag == "Dummie") {
                     Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
                     //  GameObject.Find("Zonbie");
-                    Debug.Log(hit.collider.gameObject);
                     hit.collider.gameObject.GetComponent<HP>().Damage(20);
                    // hp.Damage(damage);
                     Destroy(gameObject);
