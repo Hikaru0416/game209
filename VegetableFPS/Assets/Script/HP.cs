@@ -14,7 +14,7 @@ public class HP : MonoBehaviour {
 		if (hitPoint <= 0)
         {
             Destroy(gameObject);
-            kill++;
+            kill=kill+1;
         }
 
 	}
