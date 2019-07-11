@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*public class Totalscore : MonoBehaviour
+public class Totalscore : MonoBehaviour
 {
     float tokuten1;
     float killtokuten1;
@@ -29,4 +29,3 @@ using UnityEngine.UI;
        GetComponent<Text>().text = Score.ToString("F2");
     }
 }
-*/
