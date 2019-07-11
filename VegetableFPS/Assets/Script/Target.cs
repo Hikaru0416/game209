@@ -4,29 +4,26 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    private int ClickCount;
+    public int TargetHP = 30;
     private ParticleSystem particle;
 
     // Start is called before the first frame update
     void Awake()
     {
-        ClickCount = 0;
         particle = this.GetComponent<ParticleSystem>();
-    }
-
-
-    void OnMouseDown()
-    {
-        ClickCount++;
     }
 
     // Update is called once per frame
     void Update()
     {   
-        if (ClickCount >= 3)
+        if (TargetHP == 0)
         {
-            particle.Play();
             this.gameObject.transform.Translate(0, 0.2f, 0);
         }
+    }
+
+    public void TargetDamage(int Targetdamage)
+    {
+        TargetHP -= Targetdamage;
     }
 }
