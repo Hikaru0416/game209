@@ -9,7 +9,7 @@ public class Killtokuten : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        killtokuten = HP.GetKill();
+        //killtokuten = HP.GetKill();
         print(killtokuten);
     }
 
