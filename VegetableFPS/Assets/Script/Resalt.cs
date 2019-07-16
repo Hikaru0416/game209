@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Resalt : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class Resalt : MonoBehaviour
     {
         if (collision.gameObject.name == "Goal")
         {
-            Application.LoadLevel("Resalt");
+            SceneManager.LoadScene("Resalt");
         }
     }
 }

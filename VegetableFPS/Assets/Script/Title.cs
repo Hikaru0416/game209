@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class Title : MonoBehaviour
         if (Input.GetKey(KeyCode.Return))
         {
             {
-                Application.LoadLevel("Title");
+                SceneManager.LoadScene("Title");
             }
         }
     }

@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Totalscore : MonoBehaviour
 {
     float tokuten1;
-    float killtokuten1;
+    float killscore;
+    float killscore1;
     float Score;
     void Start()
     {
@@ -17,15 +18,19 @@ public class Totalscore : MonoBehaviour
             print(tokuten1);
         }
         {
-            killtokuten1 = HP.GetKill();
-            print(killtokuten1);
+            killscore = HP.GetKill();
+            print(killscore);
         }
-        
+        {
+            killscore1 = Target.GetKill1();
+            print(killscore1);
+        }
+
     }
 
     void Update()
     {
-       Score = tokuten1 + killtokuten1;
+       Score = tokuten1 + killscore+killscore1;
        GetComponent<Text>().text = Score.ToString("F2");
     }
 }
