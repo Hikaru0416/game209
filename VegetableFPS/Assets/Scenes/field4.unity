@@ -1529,7 +1529,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4269,6 +4269,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawn: {fileID: 2146232018}
   fallout: {fileID: 982559763}
+--- !u!114 &882318494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882318491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c5a515d21d58b43be04e2501886345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &882318501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6575,6 +6587,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 307136995156296797, guid: ef294ca94cf95844c891c8c95b911960,
+        type: 3}
+      propertyPath: beginPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 307136995156296797, guid: ef294ca94cf95844c891c8c95b911960,
+        type: 3}
+      propertyPath: beginPosition.y
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef294ca94cf95844c891c8c95b911960, type: 3}
